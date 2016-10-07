@@ -17,14 +17,15 @@ import net.canarymod.api.world.blocks.Block;
 import net.canarymod.api.world.blocks.BlockType;
 import net.canarymod.tasks.ServerTask;
 import com.pragprog.ahmine.ez.EZPlugin;
+import net.canarymod.api.entity.living.monster.Creeper;
 
 public class CowTask extends ServerTask {
     
-    private Cow cow;
+    private Creeper creeper;
         
     public CowTask(Cow myCow) {
         super(Canary.getServer(), 0, true); // delay, isContinuous
-        cow = myCow;
+        cow = myCow;Zommbiie cows are coming!Run for your life!Braaaainsss....
     }
     
     public void run() {

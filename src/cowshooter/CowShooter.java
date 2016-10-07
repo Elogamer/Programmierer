@@ -31,6 +31,7 @@ import net.canarymod.api.entity.living.animal.Cow;
 import net.canarymod.hook.player.ItemUseHook;
 import net.canarymod.plugin.PluginListener;
 import com.pragprog.ahmine.ez.EZPlugin;
+import net.canarymod.api.entity.living.monster.Creeper;
 
 public class CowShooter extends EZPlugin implements PluginListener {
 
@@ -49,7 +50,7 @@ public class CowShooter extends EZPlugin implements PluginListener {
       Location loc = player.getLocation();     
       loc.setY(loc.getY() + 2);
       
-      Cow victim = (Cow)spawnEntityLiving(loc, EntityType.COW);//(1)
+      Creeper victim = (Creeper)spawnEntityLiving(loc, EntityType.CREEPER);//(1)
       
       Canary.getServer().addSynchronousTask(new CowTask(victim));
       
